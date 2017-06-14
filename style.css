@@ -2,20 +2,23 @@
 	box-sizing: border-box;
 	position: relative;
 }
-
 html,body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background: lightgray;
-	/*width: 100%;*/
+	width: 100%;
 }
 main{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 75%;
+	width: 80%;
+}
+img{
+	width: 80%;
+	margin-bottom: 12px;
 }
 section{
 	background: #fff;
@@ -24,8 +27,15 @@ section{
 }
 .sec1{
 	width: 60%;
+	/*height: 30%;*/
+	padding: 15px;
+	padding-top: 5px;	
+}
+.sec1 h1{
+	font-family: sans-serif;
 }
 .sec1 p{
+	font-family: sans-serif;
 	font-size: 15px;
 }
 .sec2{
@@ -33,26 +43,32 @@ section{
 	width: 30%;
 }
 .sec2 div{
+	width: 80%;
 	margin: 5px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
 }
-.sec2 div img{
-	width: 80px;
+.sec2 div:last-child{
+	width: 70%;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	/*align-items: flex-end;*/
 }
 .sec2 div:first-child img{
-	width: 100px;
-	margin: 10px;
+	margin: 8px;
 }
 .sec2 div p{
 	font-size: 11px;
 	text-align: center;
 }
 .sec3{
-	width: 30%;
-	font-family: serif italic;
+	width: 29%;
+	padding: 15px;
+	font-family 	: serif italic;
 }
 .sec3 img{
 	width: 49%;	
@@ -63,42 +79,59 @@ section{
 .sec4{
 	display: flex;
 	flex-wrap: wrap;
-	width: 60%;
+	width: 59%;
+	/*height: 50%;*/
 	font-size: 60%;
-	margin: 5px;
+	/*margin: 7px;*/
 	padding: 15px;
 }
 .sec4 h2{
-	margin-top: 3px;
-	margin-bottom: 15px;
+	margin-top: 0px;
+	margin-left: 10px;
+	font-size: 17px;
+	display: flex;
+	margin-bottom: 0px;
 }
-.sec4 h3{
-	font-size: 115%;
-	position: relative;	top:0px;	left: 5px;
+.sec4 div{
+	width: 48%;
+	margin: 0 5px;
+
+}
+.sec4 div:last-child{
+	/*margin-left: 27px;*/
 }
 .sec4 div h3{
+	font-size: 15px;
+	position: relative;
+	top:0px;
+	right: 10px;
+	margin-left: 23px;
+	margin-top: 30px;
 	margin-bottom: 0;
 }
 .sec4 div ul{
-	position: relative;top: 0px;	left: 5px;
-	list-style: inside none;
+	position: relative;
+	top: 0px;
+	right: 10px;
+	list-style: none;
 	padding: 0;
 	margin-top: 2px;
 }
+
 .sec4 div ul li{
-	font-size: 11px;
+	font-size:13px;
+	margin-left: 24px;
+	/*margin-bottom: 0px;*/
 }
 .sec4 div ul li:before{
 	content: "- ";
 }
 .sec4 div img{
-	display: flex;
-	position: relative;	top:0px;	left: 15px;
+	width: 70%;
+	position: relative;
+	top:20px;
+	left: 25px;
 	/*align-self: center;*/
-	width: 75%;
-}
-.sec4 img{
-	width: 100%;
 }
 .sec5{
 	display: flex;
@@ -154,4 +187,7 @@ section{
 }
 .sec7 ul li:before{
 	content: "• "
+}
+@font-face{
+	font-family: "Times New Roman - italico";
 }
